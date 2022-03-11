@@ -12,7 +12,7 @@ namespace ETicaretServer.Persistance
                 configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../../Presentation/EticaretServer.API"));
                 configurationManager.AddJsonFile("appsettings.json");
 
-                return configurationManager.GetConnectionString("PstgreSQL");
+                return configurationManager.GetConnectionString("PostgreSQL");
             }
         }
     }
